@@ -52,35 +52,39 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Demonstration for WMRs-Formation</h1>
+            <h1 class="title is-1 publication-title">Demonstration for STFC method</h1>
               <h2 class="subtitle has-text-centered"> <!-- Adjusted font size and alignment -->
-                WMRs-Formation here refers to the formation control of wheeled mobile robots (WMRs) integrating Large Language Models (LLMs).
+                STFC here refers to our proposed spatio-temporal formation control method.
               </h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
                 <a href="https://scholar.google.com/citations?user=ncDpC9gAAAAJ&hl=en" target="_blank">Jianghong Dong</a><sup>1</sup>,</span>
+                
                 <span class="author-block">
-                  <a href="https://www.marmotlab.org/people.html" target="_blank">Yifeng Zhang</a><sup>2</sup>
+                  <a href="https://scholar.google.com/citations?user=MlK35S4AAAAJ&hl=en" target="_blank">Mengchi Cai</a><sup>1</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="https://wjiawei.com" target="_blank">Jiawei Wang</a><sup>3</sup>,</span>
-
+                  <a href="https://wjiawei.com" target="_blank">Jiawei Wang</a><sup>2,*</sup>,</span>
                   <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=MlK35S4AAAAJ&hl=en" target="_blank">Mengchi Cai</a><sup>1</sup>,
+                    <a href="https://www.researchgate.net/profile/Yibin-Yang-11" target="_blank">Yibin Yang</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=7XuJsS8AAAAJ&hl=zh-CN&oi=ao" target="_blank">Qing Xu</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.researchgate.net/profile/Jianqiang-Wang" target="_blank">Jianqiang Wang</a><sup>1</sup>, and
                   </span>
 
                   <span class="author-block">
                     <a href="https://scholar.google.com/citations?user=x58fnLQAAAAJ&hl=en" target="_blank">Keqiang Li</a><sup>1</sup>
                   </span>
-                  <span class="author-block">
-                    <a href="https://www.marmotlab.org/bio.html" target="_blank">Guillaume Sartoretti</a><sup>2</sup>
-                  </span>
+                  
 
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Tsinghua University, <sup>2</sup>National University of Singapore, <sup>3</sup>University of Michigan</span>
+                    <span class="author-block"><sup>1</sup>Tsinghua University, <sup>2</sup>University of Michigan</span>
                   </div>
 
             </div>
@@ -95,7 +99,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <h2 class="title is-3">Simulations</h2>
+      <h2 class="title is-3">Continuous formation motion simulation</h2>
     </div>
   </div>
 </section>
@@ -106,82 +110,18 @@
       <h2 class="title is-3"> </h2>
       <video poster="" id="tree" controls muted height="100%">
         <!-- Your video here -->
-        <source src="https://github.com/user-attachments/assets/c6c69a63-2bf8-4462-9502-b7c6634f1c4b"
+        <source src="static/videos/formation-sumo.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        During formation switching, the WMR formations encounter obstacles and is able to avoid them while switching to the new formation. Our method demonstrates strong adaptability and flexibility to real-world environments. When the need for formation switching is identified, we leverage LLMs to understand the environment and task requirements, and then reason to generate a new desired formation.
+        Initially, the formation encounters a small obstacle within the uppermost lane. The vehicles in the uppermost lane assess that they can handle the obstacle individually and proceed to avoid it through intra-lane maneuvers while maintaining good formation performance.
+        Subsequently, the formation encounters a slow-moving obstacle vehicle ahead and triggers a formation transition.
+        Finally, to fully utilize the road resources, the vehicles smoothly transition back from a two-lane formation to a three-lane formation.
       </h2>
     </div>
   </div>
 </section>
 <!-- End teaser video -->
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3">Real-world experiments</h2>
-    </div>
-  </div>
-</section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h3 class="title is-3">1. Formation navigation</h3>
-      <video poster="" id="tree" controls muted height="100%">
-        <!-- Your video here -->
-        <source src="https://github.com/user-attachments/assets/8ad0cff4-3c1e-4a3b-ae75-c89de17ffced"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Seven robots arranged in three columns move in a hexagonal formation.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3">2. Autonomous obstacle avoidance during formation navigation</h2>
-      <video poster="" id="tree" controls muted height="100%">
-        <!-- Your video here -->
-        <source src="https://github.com/user-attachments/assets/db57855b-3b99-494c-ada8-651acbf03e37"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        The two outermost robots balance formation maintenance and obstacle avoidance simultaneously. This capability enhances the adaptability and flexibility of the WMR formations in real-world environments, as the surroundings are not always open and free of obstacles.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3">3. Formation switching</h2>
-      <video poster="" id="tree" controls muted height="100%">
-        <!-- Your video here -->
-        <source src="https://github.com/user-attachments/assets/ae84672b-113e-4c6f-83af-78d0a1d296a1"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        The formation of seven WMRs switches from three columns to two. Such switching enhances the WMR formations' adaptability to real-world environments. For example, sudden changes in navigable areas represent one type of environments where the formation must adjust accordingly.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-
-
-
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -191,8 +131,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Formation control of wheeled mobile robots (WMRs) has been extensively studied for its applications in many fields such as logistics transportation and resource exploration. However, previous work has mainly focused on simple scenarios with fixed formation configurations, which significantly limits their flexibility and adaptability in  real-world environments with obstacles. To address this, we propose a semi-distributed formation control approach for WMRs that combines centralized formation generation with distributed trajectory planning. We leverage the pre-trained generalized understanding and reasoning capabilities of large language models (LLMs) to comprehend complex real-world environments and dynamic tasks, adaptively generating new desired formations. We also present a distributed formation trajectory planning method that effectively coordinates each WMR’s spatio-temporal relationships with others during formation navigation, and efficiently balances conflicting objectives, such as formation maintenance and obstacle avoidance, via integrated optimization. Simulations and real-world experiments confirm the effectiveness and superiority of our approach over advanced baselines. Experiment videos are available at https://dongjh20.github.io/WMRs-Formation-with-LLM.     
-          </p>
+            Formation control of Connected and Autonomous Vehicles (CAVs) has shown significant potential for improving traffic efficiency in multi-lane scenarios. 
+            However, previous work has primarily focused on spatial coordination between vehicles while neglecting temporal coordination, which significantly limits their coordinative capability and practicality in real-world traffic with obstacles. 
+            To address this, we propose a spatio-temporal formation control method (STFC) that integrates centralized formation generation with distributed trajectory planning. 
+            We go beyond traditional assignment and adopt anonymous multi-agent path finding to achieve an optimal assignment scheme inherently suppressing trajectory conflicts when generating new formations. 
+            We develop a distributed spatio-temporal joint formation trajectory planning method that simultaneously optimizes spatial positions and temporal duration and thus effectively optimizes spatio-temporal relationships among vehicles, significantly enhancing coordination capability. 
+            Integrated optimization efficiently balances conflicting objectives, especially formation maintenance and obstacle avoidance. 
+            Experiments in simulated real-world traffic confirm the effectiveness and superiority of our approach over advanced baselines. Experiment videos are available at  https://dongjh20.github.io/Vehicle-Formation/.          </p>
         </div>
       </div>
     </div>
@@ -206,9 +151,9 @@
     <div class="container">
       <h2 class="title is-3" style="max-width: 60%; margin: auto; text-align: center;">Method framework</h2> <!-- Title for the image -->
       <br>
-      <div class="image-container has-text-centered" style="max-width: 60%; margin: auto;">
+      <div class="image-container has-text-centered" style="max-width: 70%; margin: auto;">
         <!-- Your image here with adjusted width -->
-        <img src="static/images/framework V26.jpg" alt="Descriptive Alt Text" style="height: auto;"/>
+        <img src="static/images/formation-framework.jpg" alt="Descriptive Alt Text" style="height: auto;"/>
       </div>
     </div>
   </div>
