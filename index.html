@@ -60,12 +60,12 @@
               <!-- Paper authors -->
               <span class="author-block">
                 <a href="https://scholar.google.com/citations?user=ncDpC9gAAAAJ&hl=en" target="_blank">Jianghong Dong</a><sup>1</sup>,</span>
-                
+                <span class="author-block">
+                  <a href="https://wjiawei.com" target="_blank">Jiawei Wang</a><sup>2</sup>,</span>
                 <span class="author-block">
                   <a href="https://scholar.google.com/citations?user=MlK35S4AAAAJ&hl=en" target="_blank">Mengchi Cai</a><sup>1</sup>,
                 </span>
-                <span class="author-block">
-                  <a href="https://wjiawei.com" target="_blank">Jiawei Wang</a><sup>2,*</sup>,</span>
+                
                   <span class="author-block">
                     <a href="https://www.researchgate.net/profile/Yibin-Yang-11" target="_blank">Yibin Yang</a><sup>1</sup>,
                   </span>
@@ -73,7 +73,7 @@
                     <a href="https://scholar.google.com/citations?user=7XuJsS8AAAAJ&hl=zh-CN&oi=ao" target="_blank">Qing Xu</a><sup>1</sup>,
                   </span>
                   <span class="author-block">
-                    <a href="https://www.researchgate.net/profile/Jianqiang-Wang" target="_blank">Jianqiang Wang</a><sup>1</sup>, and
+                    <a href="https://www.researchgate.net/profile/Jianqiang-Wang" target="_blank">Jianqiang Wang</a><sup>1</sup> and
                   </span>
 
                   <span class="author-block">
@@ -95,25 +95,46 @@
   </div>
 </section>
 
+<!-- Single Image with Title -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="max-width: 80%; margin: auto; text-align: center;">Experimental scenario</h2> <!-- Title for the image -->
+      <br>
+      <div class="image-container has-text-centered" style="max-width: 70%; margin: auto;">
+        <!-- Your image here with adjusted width -->
+        <img src="static/images/website-exp-scenarioV4.jpg" alt="Descriptive Alt Text" style="height: auto;"/>
+      </div>
+      <h2 class="subtitle has-text-centered" style="max-width: 80%; margin: auto; text-align: left;">
+        <p>Three sequential experimental scenarios encountered during continuous formation motion simulation:</p>
+        <p>1) Scenario A: A small obstacle is present in the uppermost lane of the formation.</p>
+        <p>2) Scenario B: An obstacle vehicle is present in the lowermost lane of the formation.</p>
+        <p>3) Scenario C: The formation passes the obstacle vehicle.</p>
+      </h2>
+    </div>
+  </div>
+</section>
+
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h2 class="title is-3">Continuous formation motion simulation</h2>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <h2 class="title is-3"> </h2>
+      <h2 class="title is-3 "style="max-width: 100%; margin: auto; text-align: center;" >Continuous formation motion simulation </h2>
+      <br>
       <video poster="" id="tree" controls muted height="100%">
         <!-- Your video here -->
         <source src="static/videos/formation-sumo.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-centered" >
         Initially, the formation encounters a small obstacle within the uppermost lane. The vehicles in the uppermost lane assess that they can handle the obstacle individually and proceed to avoid it through intra-lane maneuvers while maintaining good formation performance.
         Subsequently, the formation encounters a slow-moving obstacle vehicle ahead and triggers a formation transition.
         Finally, to fully utilize the road resources, the vehicles smoothly transition back from a two-lane formation to a three-lane formation.
@@ -131,13 +152,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Formation control of Connected and Autonomous Vehicles (CAVs) has shown significant potential for improving traffic efficiency in multi-lane scenarios. 
-            However, previous work has primarily focused on spatial coordination between vehicles while neglecting temporal coordination, which significantly limits their coordinative capability and practicality in real-world traffic with obstacles. 
-            To address this, we propose a spatio-temporal formation control method (STFC) that integrates centralized formation generation with distributed trajectory planning. 
-            We go beyond traditional assignment and adopt anonymous multi-agent path finding to achieve an optimal assignment scheme inherently suppressing trajectory conflicts when generating new formations. 
-            We develop a distributed spatio-temporal joint formation trajectory planning method that simultaneously optimizes spatial positions and temporal duration and thus effectively optimizes spatio-temporal relationships among vehicles, significantly enhancing coordination capability. 
-            Integrated optimization efficiently balances conflicting objectives, especially formation maintenance and obstacle avoidance. 
-            Experiments in simulated real-world traffic confirm the effectiveness and superiority of our approach over advanced baselines. Experiment videos are available at  https://dongjh20.github.io/Vehicle-Formation/.          </p>
+            Formation control of Connected and Autonomous Vehicles (CAVs) has shown significant potential for improving traffic safety and efficiency in multi-lane traffic. 
+            However, previous work has primarily focused on spatial coordination without temporal considerations, which significantly limits their practical applicability in real-world traffic. 
+            In this paper, we propose a Spatio-Temporal Formation Control method (STFC) that integrates centralized formation generation with distributed trajectory planning. 
+            Precisely, we propose a graph-based formation maintenance representation, and show that the interlaced geometric structure is optimal for multi-lane formation. Then, we develop a distributed spatio-temporal joint formation trajectory planning method that simultaneously optimizes spatial positions and temporal duration, with consideration of multiple objectives such as formation maintenance and obstacle avoidance. 
+            Further, we design a polynomial vehicle-to-target assignment algorithm that inherently resolves conflicts. 
+            Simulation experiments demonstrate the superiority of our approach over baseline methods in terms of formation maintenance and transition.           </p>
         </div>
       </div>
     </div>
